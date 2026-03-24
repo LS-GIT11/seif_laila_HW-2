@@ -57,6 +57,9 @@ export class Counter {
     update() {
         this.display.textContent = `count ${this.count}`;
         //classList.toggle() this.count===0
+
+        this.decrementButton.classList.toggle('inactive', this.count === 0);
+        this.resetButton.classList.toggle('inactive', this.count === 0);
     }
     
 }
