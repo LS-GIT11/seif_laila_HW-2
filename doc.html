@@ -20,9 +20,9 @@
 
     <main>
         <section class="grid-con" id="doc-intro">
-            <h2 class="hidden full">Documentation Introduction</h2>
-            <p class="full">Welcome to the documentation for ⊂∷∪∩⫮⋲⦢! Here you'll find everything you need to know about our powerful counter solution, including how to use it, and how it works behind the scenes.</p>
-            <p class="full">Whether you're a beginner looking to get started or an experienced user seeking advanced tips and tricks, our documentation has you covered. Explore the sections below to learn more about the features and capabilities of ⊂∷∪∩⫮⋲⦢.</p>
+            <h2 class="full">Introduction</h2>
+            <p class="col-span-4 m-col-span-12 l-col-span-12">Welcome to the documentation for ⊂∷∪∩⫮⋲⦢ (counter)! Here you'll find everything you need to know about our powerful counter solution, including how to use it, and how it works behind the scenes.</p>
+            <p class="col-span-4 m-col-span-12 l-col-span-12">Whether you're a beginner looking to get started or an experienced user seeking advanced tips and tricks, our documentation has you covered. Explore the sections below to learn more about the features and capabilities of ⊂∷∪∩⫮⋲⦢.</p>
         </section>
 
         
@@ -30,53 +30,64 @@
             <h2 class="full">Overview</h2>
             
             <h3 class="full ">What the Counter class does</h3>
-            <p class="full"></p>
-            <code></code>
+            <p class="col-span-4 m-col-span-12 l-col-span-12">The Counter class is used to create a working counter on the page. It lets the user increase, decrease, and reset the number.</p>
+            <pre class="col-span-4 m-col-span-12 l-col-span-12"><code>
+            export class Counter {
+                constructor(selector, initialValue = 0) {
+                    this.count = initialValue;
+                    this.selector = selector;
+                    this.mount();
+                }
+            }</code></pre>
+            <p class="col-span-4 m-col-span-12 l-col-span-12">This class is meant to be simple and reusable, so it can be used for different counters in the same project.</p>
 
             <h3 class="full ">What problem it solves</h3>
-            <p class="full"></p>
+            <p class="col-span-4 m-col-span-12 l-col-span-12">The Counter class helps organize counter functionality into one place instead of rewriting the same code multiple times.</p>
+            <p class="col-span-4 m-col-span-12 l-col-span-12">This makes the code easier to manage, easier to reuse, and easier to update later.</p>
         </section>
 
         <section id="HTU" class="grid-con">
             <h2 class="full">How To Use</h2>
 
             <h3 class="full">Example HTML container markup</h3>
-            <p class="full"></p>
-            <code></code>
+            <p class="col-span-4 m-col-span-12 l-col-span-12"></p>
+            <pre class="col-span-4 m-col-span-12 l-col-span-12"><code>
+            </code></pre>
 
             <h3 class="full">Example instantiation code</h3>
-            <p class="full"></p>
-            <code></code>
+            <p class="col-span-4 m-col-span-12 l-col-span-12"></p>
+            <pre class="col-span-4 m-col-span-12 l-col-span-12"><code>
+            </code></pre>
 
             <h3 class="full">Example of parameters</h3>
-            <p class="full"></p>
-            <code></code>
+            <p class="col-span-4 m-col-span-12 l-col-span-12"></p>
+            <pre class="col-span-4 m-col-span-12 l-col-span-12"><code></code></pre>
         </section>
         
         <section id="LiveDemo" class="grid-con">
             <h2 class="full">Live Demo</h2>
 
             <h3 class="full ">At least three working counters</h3>
-            <p class="full"></p>
-            <code></code>
+            <p class="col-span-4 m-col-span-12 l-col-span-12"></p>
+            <pre class="col-span-4 m-col-span-12 l-col-span-12"><code></code></pre>
 
             <h3 class="full ">Different initial values</h3>
-            <p class="full"></p>
-            <code></code>
+            <p class="col-span-4 m-col-span-12 l-col-span-12"></p>
+            <pre class="col-span-4 m-col-span-12 l-col-span-12"><code></code></pre>
 
             <h3 class="full ">Clear visual styling</h3>
-            <p class="full"></p>
-            <code></code>
+            <p class="col-span-4 m-col-span-12 l-col-span-12"></p>
+            <pre class="col-span-4 m-col-span-12 l-col-span-12"><code></code></pre>
 
             <h3 class="full ">Proper layout and spacing</h3>
-            <p class="full"></p>
-            <code></code>
+            <p class="col-span-4 m-col-span-12 l-col-span-12"></p>
+            <pre class="col-span-4 m-col-span-12 l-col-span-12"><code></code></pre>
         </section>
 
     </main>
 
     <footer class="grid-con">
-        <p class="full">Copyright &copy; 2026 ⊂∷∪∩⫮⋲⦢. All rights reserved.</p>
+        <p class="col-span-4 m-col-span-12 l-col-span-12">Copyright &copy; 2026 ⊂∷∪∩⫮⋲⦢ (counter). All rights reserved.</p>
     </footer>
 
     <script type="module" src="js/main.js"></script>
