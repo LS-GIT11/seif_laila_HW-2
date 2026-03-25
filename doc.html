@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Counter</title>
+    <title>Documentation - Counter</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/grid.css">
 </head>
@@ -52,34 +52,45 @@
             <h3 class="full">Example HTML container markup</h3>
             <p class="col-span-4 m-col-span-12 l-col-span-12"></p>
             <pre class="col-span-4 m-col-span-12 l-col-span-12"><code>
+                &lt;div id="counter-container"&gt;&lt;/div&gt;
             </code></pre>
 
             <h3 class="full">Example instantiation code</h3>
             <p class="col-span-4 m-col-span-12 l-col-span-12"></p>
             <pre class="col-span-4 m-col-span-12 l-col-span-12"><code>
+                const counter = new Counter('#counter-container', 0);
             </code></pre>
 
             <h3 class="full">Example of parameters</h3>
             <p class="col-span-4 m-col-span-12 l-col-span-12"></p>
-            <pre class="col-span-4 m-col-span-12 l-col-span-12"><code></code></pre>
+            <pre class="col-span-4 m-col-span-12 l-col-span-12"><code>
+                const counter = new Counter(selector, initialValue);
+            </code></pre>
         </section>
         
         <section id="LiveDemo" class="grid-con">
             <h2 class="full">Live Demo</h2>
 
-            <h3 class="full ">At least three working counters</h3>
-            <p class="col-span-4 m-col-span-12 l-col-span-12"></p>
-            <pre class="col-span-4 m-col-span-12 l-col-span-12"><code></code></pre>
-
             <h3 class="full ">Different initial values</h3>
-            <p class="col-span-4 m-col-span-12 l-col-span-12"></p>
-            <pre class="col-span-4 m-col-span-12 l-col-span-12"><code></code></pre>
+            <p class="col-span-4 m-col-span-12 l-col-span-12">To demonstrate different initial values, we can create multiple counters with different starting points. This is by creating a new counter (giving it a different variable name for each one) then adding the corresponding HTML container for each counter. Seprating with a comma, we can add what number the counter should start from.</p>
+            <p class="col-span-4 m-col-span-12 l-col-span-12">Shown below are counters with initial values of <strong>0</strong>, <strong>2</strong>, and <strong>5</strong>.</p>
+            <pre class="col-span-4 m-col-span-12 l-col-span-12"><code>
+                <div class="counter" id="counter-container1"></div>
+                const counter1 = new Counter('#counter-container1', <strong>0</strong>);
+                <div class="counter" id="counter-container2"></div>
+                const counter2 = new Counter('#counter-container2', <strong>2</strong>);
+                <div class="counter" id="counter-container3"></div>
+                const counter3 = new Counter('#counter-container3', <strong>5</strong>);
+            </code></pre>
 
-            <h3 class="full ">Clear visual styling</h3>
-            <p class="col-span-4 m-col-span-12 l-col-span-12"></p>
-            <pre class="col-span-4 m-col-span-12 l-col-span-12"><code></code></pre>
+            <h3 class="full ">Step Counters</h3>
+            <p class="col-span-4 m-col-span-12 l-col-span-12">What if we also want the counter to increment by a specific step value?</p>
+            <pre class="col-span-4 m-col-span-12 l-col-span-12"><code>
+                <div class="counter" id="counter-container-super"></div>
+                const counterSuper = new StepCounter('#counter-container-super', 1, <strong>10</strong>);
+            </code></pre>
 
-            <h3 class="full ">Proper layout and spacing</h3>
+            <h3 class="full ">Styling</h3>
             <p class="col-span-4 m-col-span-12 l-col-span-12"></p>
             <pre class="col-span-4 m-col-span-12 l-col-span-12"><code></code></pre>
         </section>
