@@ -85,9 +85,7 @@ export class StepCounter extends Counter {
             this.count = 0;
             this.update();
         }
-    }
-    
-    
+    } 
 }
     //increment (){}
     //decrement (){}
