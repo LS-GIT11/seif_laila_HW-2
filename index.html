@@ -9,9 +9,10 @@
 </head>
 <body>
     <header class="grid-con">
-        <h1>⊂∷∪∩⫮⋲⦢</h1>
-        <nav>
-            <ul>
+        <h1 class="col-span-1 m-col-start-7 m-col-span-4 l-col-start-7 l-col-span-4">⊂∷∪∩⫮⋲⦢</h1>
+        <menu id="menu-toggle" class="col-span-1 col-start-4">+</menu>
+        <nav class="hidden full m-col-span-12 l-col-span-12" id="nav-menu">
+            <ul class="full">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="doc.html">Documentation</a></li>
             </ul>
@@ -21,12 +22,12 @@
     <main>
 
         <section class="grid-con" id="start-section">
-            <h2 class="hidden full">Welcome to ⊂∷∪∩⫮⋲⦢</h2>
+            <h2 class="full">Welcome</h2>
             <p class="full">Your ultimate counter solution for all your counting needs.</p>
-            <button class="start-button col-span-2 m-col-span-6 l-col-span-4">Get Started</button>
+            <button id="start-button" class="col-span-2 m-col-span-6 l-col-span-4">Get Started</button>
         </section>
 
-        <section class="grid-con" id="counters-home-section">
+        <section class="grid-con hidden" id="counters-home-section">
             <h2 class="hidden full">Counters</h2>
             <div class="counter full m-col-span-6 l-col-span-3" id="counter-container1"></div>
             <div class="counter full m-col-span-6 l-col-span-3" id="counter-container2"></div>
