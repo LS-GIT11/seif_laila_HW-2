@@ -50,29 +50,31 @@
             <h2 class="full">How To Use</h2>
 
             <h3 class="full">Example HTML container markup</h3>
-            <p class="col-span-4 m-col-span-12 l-col-span-12"></p>
+            <p class="col-span-4 m-col-span-12 l-col-span-12">Here is an example of the HTML container markup for the counter:</p>
             <pre class="col-span-4 m-col-span-12 l-col-span-12"><code>
                 &lt;div id="counter-container"&gt;&lt;/div&gt;
             </code></pre>
+            <p class="col-span-4 m-col-span-12 l-col-span-12">This code creates a div element with the id "counter-container". This is where the counter will be rendered on the page.</p>
 
             <h3 class="full">Example instantiation code</h3>
-            <p class="col-span-4 m-col-span-12 l-col-span-12"></p>
+            <p class="col-span-4 m-col-span-12 l-col-span-12">Here is an example of how to instantiate the counter:</p>
             <pre class="col-span-4 m-col-span-12 l-col-span-12"><code>
                 const counter = new Counter('#counter-container', 0);
             </code></pre>
 
             <h3 class="full">Example of parameters</h3>
-            <p class="col-span-4 m-col-span-12 l-col-span-12"></p>
+            <p class="col-span-4 m-col-span-12 l-col-span-12">The use of parameters is so we can customize the counter's initial value and the HTML container it will be rendered in. In other words, we can specify the selector for the container and the initial value for the counter.</p>
             <pre class="col-span-4 m-col-span-12 l-col-span-12"><code>
                 const counter = new Counter(selector, initialValue);
             </code></pre>
+            <p class="col-span-4 m-col-span-12 l-col-span-12">This above code demonstrates how to use the parameters to customize the counter's initial value and the HTML container it will be rendered in. Starting with "const counter", we create a new instance of the Counter class, passing in the selector for the container and the initial value for the counter.</p>
         </section>
         
         <section id="LiveDemo" class="grid-con">
             <h2 class="full">Live Demo</h2>
 
             <h3 class="full ">Different initial values</h3>
-            <p class="col-span-4 m-col-span-12 l-col-span-12">To demonstrate different initial values, we can create multiple counters with different starting points. This is by creating a new counter (giving it a different variable name for each one) then adding the corresponding HTML container for each counter. Seprating with a comma, we can add what number the counter should start from.</p>
+            <p class="col-span-4 m-col-span-12 l-col-span-12">To demonstrate different initial values, we can create multiple counters with different starting points. This is by creating a new counter (giving it a different variable name for each one) then adding the corresponding HTML container for each counter. Separating with a comma, we can add what number the counter should start from.</p>
             <p class="col-span-4 m-col-span-12 l-col-span-12">Shown below are counters with initial values of <strong>0</strong>, <strong>2</strong>, and <strong>5</strong>.</p>
             <pre class="col-span-4 m-col-span-12 l-col-span-12"><code>
                 <div class="counter" id="counter-container1"></div>
@@ -89,10 +91,8 @@
                 <div class="counter" id="counter-container-super"></div>
                 const counterSuper = new StepCounter('#counter-container-super', 1, <strong>10</strong>);
             </code></pre>
+            
 
-            <h3 class="full ">Styling</h3>
-            <p class="col-span-4 m-col-span-12 l-col-span-12"></p>
-            <pre class="col-span-4 m-col-span-12 l-col-span-12"><code></code></pre>
         </section>
 
     </main>
