@@ -8,13 +8,16 @@
     <link rel="stylesheet" href="css/grid.css">
 </head>
 <body>
-    <header class="grid-con">
-        <h1 class="col-span-1 m-col-start-7 m-col-span-4 l-col-start-7 l-col-span-4">⊂⊕∪∩⫮⋲⦢</h1>
-        <menu id="menu-toggle" class="col-span-1 col-start-4">+</menu>
-        <nav class="hidden full m-col-span-12 l-col-span-12" id="nav-menu">
-            <ul class="full">
-                <li class="m-col-span-6 l-col-span-6"><a href="index.html">Home</a></li>
-                <li class="m-col-span-6 l-col-span-6"><a href="doc.html">Documentation</a></li>
+   <header class="grid-con">
+        <h1 class="col-span-3">⊂⊕∪∩⫮⋲⦢</h1>
+        <div id="menu-toggle" class="col-span-1 col-start-4">☰</div>
+        <nav class="full m-col-span-5 l-col-span-5" id="nav-menu">
+            <div class="mobile-overlay">
+                <button class="close-menu">×</button>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="doc.html">Documentation</a></li>
             </ul>
         </nav>
     </header>
@@ -78,21 +81,21 @@
             <p class="col-span-4 m-col-span-12 l-col-span-12">To demonstrate different initial values, we can create multiple counters with different starting points. This is by creating a new counter (giving it a different variable name for each one) then adding the corresponding HTML container for each counter. Separating with a comma, we can add what number the counter should start from.</p>
             <p class="col-span-4 m-col-span-12 l-col-span-12">Shown below are counters with initial values of <strong>0</strong>, <strong>2</strong>, and <strong>5</strong>.</p>
 
-            <div class="counter" id="counter-container1"></div>
+            <div class="counter full m-col-span-6 l-col-span-3" id="counter-container1"></div>
             <pre class="col-span-4 m-col-span-12 l-col-span-12"><code>
                 const counter1 = new Counter('#counter-container1', <strong>0</strong>);</code></pre>
             
-            <div class="counter" id="counter-container2"></div>
+            <div class="counter full m-col-span-6 l-col-span-3" id="counter-container2"></div>
             <pre class="col-span-4 m-col-span-12 l-col-span-12"><code>
                 const counter2 = new Counter('#counter-container2', <strong>2</strong>);</code></pre>    
             
-            <div class="counter" id="counter-container3"></div>
+            <div class="counter full m-col-span-6 l-col-span-3" id="counter-container3"></div>
             <pre class="col-span-4 m-col-span-12 l-col-span-12"><code>
                 const counter3 = new Counter('#counter-container3', <strong>5</strong>);</code></pre>    
 
             <h3 class="full ">Step Counters</h3>
             <p class="col-span-4 m-col-span-12 l-col-span-12">What if we also want the counter to increment by a specific step value?</p>
-            <div class="counter" id="counter-container-super"></div>
+            <div class="counter full m-col-span-6 l-col-span-3" id="counter-container-super"></div>
             <pre class="col-span-4 m-col-span-12 l-col-span-12"><code>
                 const counter4 = new StepCounter('#counter-container-super', 1, <strong>10</strong>);</code></pre>
 
@@ -128,6 +131,8 @@
     <footer class="grid-con">
         <p class="col-span-4 m-col-span-12 l-col-span-12">Copyright &copy; 2026 ⊂∷∪∩⫮⋲⦢ (counter). All rights reserved.</p>
     </footer>
+
+    
 
     <script type="module" src="js/main.js"></script>
     
