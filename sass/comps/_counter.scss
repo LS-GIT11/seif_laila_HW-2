@@ -3,16 +3,15 @@
     border: 2px solid rgb(135, 221, 242);
     border-radius: 10000px;
     padding: 10px;
-    margin: 25px;
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
     font-size: 62px;
-    width: 275px;
-    height: 275px;
+    width: 305px;
+    height: 305px;
     padding-top: 60px;
     box-sizing: border-box;
+    margin-top: 140px;
 }
-
 
 .counter button{
     background-color: rgb(255, 255, 255);
@@ -23,8 +22,6 @@
     cursor: pointer;
     margin: 5px;
 }
-
-//make the counter buttons in a row while the number stays on top of the buttons
 
 .counter button:hover{
     border: none;
