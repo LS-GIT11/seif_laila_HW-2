@@ -12,21 +12,3 @@ html, body{
 h2, h3, p, button, li, a, code{
     font-family: 'Courier New', Courier, monospace;
 }
-
-@keyframes slideIn{
-    0% {
-        transform: translateX(-1000px);
-    }
-    100% {
-        transform: translateX(0px);
-    }
-}
-
-@keyframes slideOut{
-    0% {
-        transform: translateX(0px);
-    }
-    100% {
-        transform: translateX(-1000px);
-    }
-}
