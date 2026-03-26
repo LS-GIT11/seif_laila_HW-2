@@ -16,8 +16,8 @@ export class Counter {
         this.resetButton = document.createElement('button');
 
         //set button text
-        this.button.textContent = 'Increment';
-        this.decrementButton.textContent = 'Decrement';
+        this.button.textContent = '+';
+        this.decrementButton.textContent = '-';
         this.resetButton.textContent = 'Reset';
         //append display and button to container
         container.appendChild(this.display);
@@ -55,7 +55,7 @@ export class Counter {
     }
 
     update() {
-        this.display.textContent = `count ${this.count}`;
+        this.display.textContent = `${this.count}`;
         //classList.toggle() this.count===0
 
         this.decrementButton.classList.toggle('inactive', this.count === 0);
