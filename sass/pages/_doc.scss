@@ -1,0 +1,35 @@
+#doc-intro, #Overview, #HTU, #LiveDemo {
+    margin-top: 30px;
+    background-color: #dff5fb;
+    border-radius: 25px;
+    padding: 20px;
+}
+
+#doc-intro h2, #Overview h2, #HTU h2, #LiveDemo h2 {
+    margin: 0 0 20px 0;
+    text-align: center;
+    font-size: 36px;
+    text-decoration: wavy underline 2px #87ddf2;
+}
+
+#Overview h3, #HTU h3, #LiveDemo h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #167991;
+}
+
+#doc-intro p, #Overview p, #HTU p, #LiveDemo p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+pre {
+    background-color: #171919;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+code {
+    font-family: 'Courier New', Courier, monospace;
+    color: #cbe8ef;
+}
