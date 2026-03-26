@@ -25,8 +25,8 @@
     <main>
         <section class="grid-con" id="doc-intro">
             <h2 class="full">Introduction</h2>
-            <p class="col-span-4 m-col-span-12 l-col-span-12">Welcome to the documentation for ⊂∷∪∩⫮⋲⦢ (counter)! Here you'll find everything you need to know about our powerful counter solution, including how to use it, and how it works behind the scenes.</p>
-            <p class="col-span-4 m-col-span-12 l-col-span-12">Whether you're a beginner looking to get started or an experienced user seeking advanced tips and tricks, our documentation has you covered. Explore the sections below to learn more about the features and capabilities of ⊂∷∪∩⫮⋲⦢.</p>
+            <p class="col-span-4 m-col-span-12 l-col-span-12">Welcome to the documentation for ⊂⊕∪∩⫮⋲⦢ (counter)! Here you'll find everything you need to know about our powerful counter solution, including how to use it, and how it works behind the scenes.</p>
+            <p class="col-span-4 m-col-span-12 l-col-span-12">Whether you're a beginner looking to get started or an experienced user seeking advanced tips and tricks, our documentation has you covered. Explore the sections below to learn more about the features and capabilities of ⊂⊕∪∩⫮⋲⦢.</p>
         </section>
 
         
@@ -36,13 +36,13 @@
             <h3 class="full ">What the Counter class does</h3>
             <p class="col-span-4 m-col-span-12 l-col-span-12">The Counter class is used to create a working counter on the page. It lets the user increase, decrease, and reset the number.</p>
             <pre class="col-span-4 m-col-span-12 l-col-span-12"><code>
-            export class Counter {
-                constructor(selector, initialValue = 0) {
-                    this.count = initialValue;
-                    this.selector = selector;
-                    this.mount();
-                }
-            }</code></pre>
+export class Counter {
+    constructor(selector, initialValue = 0) {
+        this.count = initialValue;
+        this.selector = selector;
+        this.mount();
+    }
+}</code></pre>
             <p class="col-span-4 m-col-span-12 l-col-span-12">This class is meant to be simple and reusable, so it can be used for different counters in the same project.</p>
 
             <h3 class="full ">What problem it solves</h3>
@@ -56,20 +56,20 @@
             <h3 class="full">Example HTML container markup</h3>
             <p class="col-span-4 m-col-span-12 l-col-span-12">Here is an example of the HTML container markup for the counter:</p>
             <pre class="col-span-4 m-col-span-12 l-col-span-12"><code>
-                &lt;div id="counter-container"&gt;&lt;/div&gt;
+&lt;div id="counter-container"&gt;&lt;/div&gt;
             </code></pre>
             <p class="col-span-4 m-col-span-12 l-col-span-12">This code creates a div element with the id "counter-container". This is where the counter will be rendered on the page.</p>
 
             <h3 class="full">Example instantiation code</h3>
             <p class="col-span-4 m-col-span-12 l-col-span-12">Here is an example of how to instantiate the counter:</p>
             <pre class="col-span-4 m-col-span-12 l-col-span-12"><code>
-                const counter = new Counter('#counter-container', 0);
+const counter = new Counter('#counter-container', 0);
             </code></pre>
 
             <h3 class="full">Example of parameters</h3>
             <p class="col-span-4 m-col-span-12 l-col-span-12">The use of parameters is so we can customize the counter's initial value and the HTML container it will be rendered in. In other words, we can specify the selector for the container and the initial value for the counter.</p>
             <pre class="col-span-4 m-col-span-12 l-col-span-12"><code>
-                const counter = new Counter(selector, initialValue);
+const counter = new Counter(selector, initialValue);
             </code></pre>
             <p class="col-span-4 m-col-span-12 l-col-span-12">This above code demonstrates how to use the parameters to customize the counter's initial value and the HTML container it will be rendered in. Starting with "const counter", we create a new instance of the Counter class, passing in the selector for the container and the initial value for the counter.</p>
         </section>
@@ -83,43 +83,43 @@
 
             <div class="counter full m-col-span-6 l-col-span-3" id="counter-container1"></div>
             <pre class="col-span-4 m-col-span-12 l-col-span-12"><code>
-                const counter1 = new Counter('#counter-container1', <strong>0</strong>);</code></pre>
+const counter1 = new Counter('#counter-container1', <strong>0</strong>);</code></pre>
             
             <div class="counter full m-col-span-6 l-col-span-3" id="counter-container2"></div>
             <pre class="col-span-4 m-col-span-12 l-col-span-12"><code>
-                const counter2 = new Counter('#counter-container2', <strong>2</strong>);</code></pre>    
+const counter2 = new Counter('#counter-container2', <strong>2</strong>);</code></pre>    
             
             <div class="counter full m-col-span-6 l-col-span-3" id="counter-container3"></div>
             <pre class="col-span-4 m-col-span-12 l-col-span-12"><code>
-                const counter3 = new Counter('#counter-container3', <strong>5</strong>);</code></pre>    
+const counter3 = new Counter('#counter-container3', <strong>5</strong>);</code></pre>    
 
             <h3 class="full ">Step Counters</h3>
             <p class="col-span-4 m-col-span-12 l-col-span-12">What if we also want the counter to increment by a specific step value?</p>
             <div class="counter full m-col-span-6 l-col-span-3" id="counter-container-super"></div>
             <pre class="col-span-4 m-col-span-12 l-col-span-12"><code>
-                const counter4 = new StepCounter('#counter-container-super', 1, <strong>10</strong>);</code></pre>
+const counter4 = new StepCounter('#counter-container-super', 1, <strong>10</strong>);</code></pre>
 
             <pre class="col-span-4 m-col-span-12 l-col-span-12"><code>
-                export class StepCounter extends Counter {
-                        constructor(selector, initialValue = 0, step = 1) {
-                        super(selector, initialValue);
-                        this.step = step;
-                    }
+export class StepCounter extends Counter {
+    constructor(selector, initialValue = 0, step = 1) {
+    super(selector, initialValue);
+    this.step = step;
+}
 
-                    increment() {
-                        this.count += this.step;
-                        this.update();
-                    }
+    increment() {
+        this.count += this.step;
+        this.update();
+    }
 
-                    decrement() {
-                        this.count -= this.step;
-                        this.update();
-                        if (this.count &lt; 0) {
-                            this.count = 0;
-                            this.update();
-                        }
-                    } 
-                }
+    decrement() {
+        this.count -= this.step;
+        this.update();
+        if (this.count &lt; 0) {
+            this.count = 0;
+            this.update();
+        }
+    } 
+}
             </code></pre>
             
             <p class="col-span-4 m-col-span-12 l-col-span-12">Additional to adding a new StepCounter with the id of "counter-container-super", we export the StepCounter class so it can be used in other modules. having the increment and decrement methods overridden allows the counter to change by the specified step value. Then having it update the display ensures that the user sees the correct value after each change.</p>
@@ -129,7 +129,7 @@
     </main>
 
     <footer class="grid-con">
-        <p class="col-span-4 m-col-span-12 l-col-span-12">Copyright &copy; 2026 ⊂∷∪∩⫮⋲⦢ (counter). All rights reserved.</p>
+        <p class="col-span-4 m-col-span-12 l-col-span-12">Copyright &copy; 2026 ⊂⊕∪∩⫮⋲⦢ (counter). All rights reserved.</p>
     </footer>
 
     
