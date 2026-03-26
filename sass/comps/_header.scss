@@ -42,15 +42,16 @@ header ul li a{
 
 header ul li a:hover{
     font-size: 24px;
-    color: rgb(172, 200, 231);
+    color: rgb(224, 232, 241);
     font-weight: 600;
+    transform: translateY(-3px) scale(1.05);
 }
 
 header ul li:hover{
     font-size: 24px;
     background-color: rgb(25, 97, 136);
+    padding: 0 20px;
     font-weight: 600;
-    padding: 10px;
     transition: all 0.3s ease;
 }
 
@@ -110,8 +111,6 @@ header nav ul {
     header nav ul{
         min-height: auto;
         flex-direction: row;
-        justify-content: flex-end;
-        align-items: center;
         gap: 30px;
         background-color: transparent;
     }
@@ -120,14 +119,18 @@ header nav ul {
         display: block;
         position: static;
         background-color: transparent;
-        animation: none;
     }
 
     #menu-toggle, .close-menu{
         display: none;
     }
     
+    header ul li{
+        margin: 0;
+
+    }
 }
+
 @keyframes slideIn{
     0% {
         transform: translateX(-1000px);
